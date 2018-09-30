@@ -154,6 +154,7 @@
 - [] consider js library like Js Pdf - to generate a PDF file of our plan?
 - [] consider storing the event in DB so other authorized users can come to our site, enter the # and see the plan - create and event group object that lists people in the group and their email so can send plan to group members via email or allow access to DB to view plan onlines
 
+For Review By All Team Members
 
 
 
