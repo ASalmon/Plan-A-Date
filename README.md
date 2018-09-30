@@ -1,7 +1,7 @@
 # Plan-A-Date 
 
 ### Group Project 1
-#### Team members: Jamie Hernandez, Vicki Hope, Alton Salmon, Daniel Valverde
+#### Team members: Vicki Hope, Jamie Rodriguez Alton Salmon, Daniel Valverde
 
 **Target Audience**
 * adults, ages 18 and older
