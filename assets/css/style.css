@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .carousel-item::before {
   content: '';
-  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   height: 100%;
   width: 100%;
