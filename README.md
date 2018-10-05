@@ -114,7 +114,7 @@
 - [] use of wireframe to help us visualize theme/layout/content/consistency across site
 - [] minimum USER-INPUT required, depends on APIs used - user-input via keyboard (voice-future?)
     - zipcode or more specific address?
-    - # of people 
+    - number of people 
     - date (only one day for now)
     - start time
     - stop time
