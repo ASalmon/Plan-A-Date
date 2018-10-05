@@ -1,4 +1,4 @@
-jQuery(document).ready(function( $ ) {
+$(document).ready(function( $ ) {
 
   // Back to top button
   $(window).scroll(function() {
