@@ -153,66 +153,87 @@
       </div>
     </section><!-- #featured-services -->
 
-    <section id="about">
+    <br>
+    <!--==========================
+          Search Section
+        ============================-->
+    <section id="search">
+      <header class="section-header">
+        <h3>Search</h3>
+        <p>Find a place to eat with great food. Have fun and enjoy some entertainment.</p>
+      </header>
+    
       <div class="container">
-
-        <header class="section-header">
-          <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </header>
-
-        <div class="row about-cols">
-
-          <div class="col-md-4 wow fadeInUp">
-            <div class="about-col">
-              <div class="img">
-                <img src="" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Mission</a></h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </p>
+        <div class="row align-items-center">
+    
+          <!-- Food section -->
+          <div class="col-md-6 wow fadeInUp">
+            <div class="w-100"></div>
+            <div class="img">
+              <img src="img/about-mission.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             </div>
+            <h2 class="title"><a href="#">Food</a></h2>
+            <p>
+              Search Yelp for the best places to eat.
+            </p>
+            <br>
+    
+            <!-- Search input for food -->
+            <form>
+              <!-- Search in location -->
+              City: <input type="text" class="form-control" name="yelpLoc" id="yelpLoc-input" placeholder="Funtown"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+              <br>
+              <!-- General Food search -->
+              Food Type: <input type="text" class="form-control" name="food" id="food-input" placeholder="Seach for food"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+              <br>
+              <div class="text-left" id="food-button"><button class="btn btn-success" type="submit">Find Food</button></div>
+            </form>
+            <br>
+            <!-- Where food results should display -->
+            <div id="yelp-results"></div>
           </div>
-
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="about-col">
-              <div class="img">
-                <img src="" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-list-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo.
-              </p>
+          <br>
+    
+          <!-- Entertainment Section -->
+          <div class="col-md-6 wow fadeInUp">
+            <div class="w-100"></div>
+            <div class="img">
+              <img src="img/about-plan.jpg" alt="" class="img-fluid">
+              <div class="icon"><i class="ion-ios-list-outline"></i></div>
             </div>
+    
+            <h2 class="title"><a href="#">Entertainment</a></h2>
+            <p>
+              Search Evenbrite for great entertainment.
+            </p>
+            <br>
+            <!-- Search input for Events -->
+            <form>
+              <!-- Search in location -->
+              City: <input type="text" class="form-control" name="eventLoc" id="eventLoc-input" placeholder="Funtown"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+              <br>
+              Event: <input type="text" class="form-control" name="events" id="event-input" placeholder="Seach for fun"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+              <br>
+              <div class="text-left" id="event-button"><button class="btn btn-success" type="submit">Find Event</button></div>
+            </form>
+            <br>
+            <!-- where event results should be displayed -->
+            <div id="event-results"></div>
           </div>
+    
+        </div> <!-- </div> End Row -->
+      </div> <!-- </div> End Container -->
+    </section>
 
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
-            <div class="about-col">
-              <div class="img">
-                <img src="" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
-              </div>
-              <h2 class="title"><a href="#">Our Vision</a></h2>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione
-                voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #about -->
   </main>
 
   <footer id="footer">
