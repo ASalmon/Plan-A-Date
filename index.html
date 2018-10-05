@@ -26,7 +26,7 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">Search</a></li>
+          <li><a href="#search">Search</a></li>
           <li><a href="#plan">Plan</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -173,63 +173,36 @@
               <img src="img/about-mission.jpg" alt="" class="img-fluid">
               <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             </div>
-            <h2 class="title"><a href="#">Food</a></h2>
+            <h2 class="title"><a href="#">Food & Entertainment!</a></h2>
             <p>
-              Search Yelp for the best places to eat.
+              Search for the best places to eat and awesome entertainment.
             </p>
-            <br>
-    
+   
             <!-- Search input for food -->
             <form>
               <!-- Search in location -->
-              City: <input type="text" class="form-control" name="yelpLoc" id="yelpLoc-input" placeholder="Funtown"
+              Date: <input type="date" class="form-control" name="date" id="date-input"/>
+              <div class="validation"></div>
+              <br>
+              City: <input type="text" class="form-control" name="location" id="location-input" placeholder="Funtown"
                 data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
               <div class="validation"></div>
               <br>
               <!-- General Food search -->
-              Food Type: <input type="text" class="form-control" name="food" id="food-input" placeholder="Seach for food"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              Food Type: <input type="text" class="form-control" name="food" id="food-input" placeholder="Seach for food"/>
               <div class="validation"></div>
               <br>
-              <div class="text-left" id="food-button"><button class="btn btn-success" type="submit">Find Food</button></div>
+              Event: <input type="text" class="form-control" name="events" id="event-input" placeholder="Seach for fun"/>
+              <div class="validation"></div>
+              <br>
+              <div class="text-left" id="food-button"><button class="btn btn-success" type="submit">Search</button></div>
             </form>
             <br>
             <!-- Where food results should display -->
-            <div id="yelp-results"></div>
+            <div id="results"></div>
           </div>
           <br>
-    
-          <!-- Entertainment Section -->
-          <div class="col-md-6 wow fadeInUp">
-            <div class="w-100"></div>
-            <div class="img">
-              <img src="img/about-plan.jpg" alt="" class="img-fluid">
-              <div class="icon"><i class="ion-ios-list-outline"></i></div>
-            </div>
-    
-            <h2 class="title"><a href="#">Entertainment</a></h2>
-            <p>
-              Search Evenbrite for great entertainment.
-            </p>
-            <br>
-            <!-- Search input for Events -->
-            <form>
-              <!-- Search in location -->
-              City: <input type="text" class="form-control" name="eventLoc" id="eventLoc-input" placeholder="Funtown"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-              <br>
-              Event: <input type="text" class="form-control" name="events" id="event-input" placeholder="Seach for fun"
-                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-              <br>
-              <div class="text-left" id="event-button"><button class="btn btn-success" type="submit">Find Event</button></div>
-            </form>
-            <br>
-            <!-- where event results should be displayed -->
-            <div id="event-results"></div>
-          </div>
-    
+     
         </div> <!-- </div> End Row -->
       </div> <!-- </div> End Container -->
     </section>
