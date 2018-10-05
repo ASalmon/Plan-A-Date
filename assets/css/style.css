@@ -1,8 +1,8 @@
 /*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
+Theme Name: BizPage
+Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+Author: BootstrapMade.com
+License: https://bootstrapmade.com/license/
 */
 /*--------------------------------------------------------------
 # General
@@ -89,6 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header #logo {
   float: left;
+  /* VH add outline to text for improved readability */
+  text-shadow: 0 0 5px black;
 }
 
 @media (min-width: 1024px) {
@@ -172,11 +174,13 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#intro h2 {
+#intro .carousel-content h2 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
+  /* VH add shadow to make header stand out */
+  text-shadow: 0 0 5px black;
 }
 
 @media (max-width: 768px) {
@@ -189,6 +193,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
+  /* VH increase font size for sub-header - improve readability */
+  font-size: 25px;
+  font-style: italic;
+  
 }
 
 @media (min-width: 1024px) {
@@ -288,6 +296,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu > li {
   float: left;
+  /* VH add text outline for improved readability */
+  text-shadow: 0 0 5px black;
 }
 
 .nav-menu li:hover > ul,
@@ -302,6 +312,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li {
   min-width: 180px;
+  
 }
 
 /* Nav Menu Arrows */
