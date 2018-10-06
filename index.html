@@ -7,9 +7,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
-
+  
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-    rel="stylesheet">
+  rel="stylesheet">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
@@ -18,11 +18,11 @@
 <body>
   <header id="header">
     <div class="container-fluid">
-
+      
       <div id="logo" class="pull-left">
         <h1><a href="#intro" class="scrollto">Plan A Date</a></h1>
       </div>
-
+      
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Home</a></li>
@@ -32,15 +32,15 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
+  
   <section id="intro">
     <div class="intro-container">
       <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
-
+        
         <ol class="carousel-indicators"></ol>
-
+        
         <div class="carousel-inner" role="listbox">
-
+          
           <div class="carousel-item active">
             <div class="carousel-background"><img src="assets/images/aquarium.jpg" alt=""></div>
             <div class="carousel-container">
@@ -51,7 +51,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="carousel-item">
             <div class="carousel-background"><img src="assets/images/lake-park-2387963_1920.jpg" alt=""></div>
             <div class="carousel-container">
@@ -62,7 +62,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="carousel-item">
             <div class="carousel-background"><img src="assets/images/edward-franklin-72304-unsplash.jpg" alt=""></div>
             <div class="carousel-container">
@@ -73,7 +73,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="carousel-item">
             <div class="carousel-background"><img src="assets/images/cheers-839865_1920.jpg" alt=""></div>
             <div class="carousel-container">
@@ -84,7 +84,7 @@
               </div>
             </div>
           </div>
-
+          
           <div class="carousel-item">
             <div class="carousel-background"><img src="assets/images/people-2561578_1280.jpg" alt=""></div>
             <div class="carousel-container">
@@ -95,162 +95,163 @@
               </div>
             </div>
           </div>
-
+          
         </div>
       </div>
     </div>
   </section><!-- #intro -->
-
+  
   <main id="main">
- 
+    
     <section id="featured-services">
       <div class="container">
         <div class="row">
-
+          
           <div class="col-lg-4 box">
             <i class="ion-ios-bookmarks-outline"></i>
             <h4 class="title"><a href="">Lighten up ...</a></h4>
             <p class="description">just enjoy life, smile more, laugh more, and don't get so worked up about things.</p><br><p> --Kenneth Branagh</p>
           </div>
-
+          
           <div class="col-lg-4 box box-bg">
             <i class="ion-ios-stopwatch-outline"></i>
             <h4 class="title"><a href="">Slow down and enjoy life ...</a></h4>
             <p class="description">it's not only the scenery you miss by going too fast - you also miss the sense of where you are going and why.</p><br>
-              <p>--Eddie Cantor</p>
+            <p>--Eddie Cantor</p>
           </div>
-
+          
           <div class="col-lg-4 box">
             <i class="ion-ios-heart-outline"></i>
             <h4 class="title"><a href="">Simply ...</a></h4>
             <p class="description">enjoy life and the great pleasures that come with it.</p><br>
-         <p>--Karolina Kurkova</p>
+            <p>--Karolina Kurkova</p>
           </div>
-
+          
         </div>
       </div>
     </section><!-- #featured-services -->
-
+    
     <br>
     <!--==========================
-          Search Section
-        ============================-->
-    <section id="search">
-      <header class="section-header">
-        <h3>Search</h3>
-        <p>Find a place to eat with great food. Have fun and enjoy some entertainment.</p>
-      </header>
-    
-      <div class="container">
-        <div class="row align-items-center">
-    
-          <!-- Food section -->
-          <div class="col-md-6 wow fadeInUp">
-            <div class="w-100"></div>
-            <h2 class="title"><a href="#">Food & Entertainment!</a></h2>
-            <p>
-              Search for the best places to eat and awesome entertainment.
-            </p>
-   
-            <!-- Search input for food -->
-            <form>
-              <!-- Search in location -->
-              Date: <input type="date" class="form-control" name="date" id="date-input"/>
-              <div class="validation"></div>
-              <br>
-              City: <input type="text" class="form-control" name="location" id="location-input" placeholder="Funtown"
+      Search Section
+      ============================-->
+      <section id="search">
+        <header class="section-header">
+          <h3>Search</h3>
+          <p>Find a place to eat with great food. Have fun and enjoy some entertainment.</p>
+        </header>
+        
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <!-- Food section -->
+            <div class="col-md-6 wow fadeInUp">
+              <div class="w-100"></div>
+              <h2 class="title"><a href="#">Food & Entertainment!</a></h2>
+              <p>
+                Search for the best places to eat and awesome entertainment.
+              </p>
+              
+              <!-- Search input for food -->
+              <form>
+                <!-- Search in location -->
+                Date: <input type="date" class="form-control" name="date" id="date-input"/>
+                <div class="validation"></div>
+                <br>
+                City: <input type="text" class="form-control" name="location" id="location-input" placeholder="Funtown"
                 data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
+                <div class="validation"></div>
+                <br>
+                <!-- General Food search -->
+                Food Type: <input type="text" class="form-control" name="food" id="food-input" placeholder="Seach for food"/>
+                <div class="validation"></div>
+                <br>
+                Event: <input type="text" class="form-control" name="events" id="event-input" placeholder="Seach for fun"/>
+                <div class="validation"></div>
+                <br>
+                <div class="text-left" id="search-button"><button class="btn btn-success" type="submit">Search</button></div>
+              </form>
               <br>
-              <!-- General Food search -->
-              Food Type: <input type="text" class="form-control" name="food" id="food-input" placeholder="Seach for food"/>
-              <div class="validation"></div>
-              <br>
-              Event: <input type="text" class="form-control" name="events" id="event-input" placeholder="Seach for fun"/>
-              <div class="validation"></div>
-              <br>
-              <div class="text-left" id="search-button"><button class="btn btn-success" type="submit">Search</button></div>
-            </form>
-            <br>
-          </div>
-        </div> <!-- </div> End Row -->
-      </div> <!-- </div> End Container -->
-    </section> <!--- End Search Section-->
-    <!--==========================
-      Portfolio Section
-    ============================-->
-    <section id="Search" class="section-bg">
-
-    </section>
-    <section id = "itineraryArea">
-      <div class = "container" id = "itinerary">
-        <div class="col-md-6 wow fadeInUp">
-          <div class="w-100"></div>
-            <h2 class="title"><a href="#">Your Itinerary</a></h2>
-            <p>
-              Enjoy Your Date!
-            </p>
-            <div class="col-md-6">
+            </div>
+          </div> <!-- </div> End Row -->
+        </div> <!-- </div> End Container -->
+      </section> <!--- End Search Section-->
+      <!--==========================
+        Portfolio Section
+        ============================-->
+        <section id="Search" class="section-bg">
+          
+        </section>
+        <section id = "itineraryArea">
+          <div class = "container" id = "itinerary">
+            <div class="col-md-6 wow fadeInUp">
+              <div class="w-100"></div>
+              <h2 class="title"><a href="#">Your Itinerary</a></h2>
+              <p>
+                Enjoy Your Date!
+              </p>
+              <div class="col-md-6">
                 <div class="portfolio-wrap">
                   <figure>
                     <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150"></a>
-                 </figure>
-    
+                  </figure>
+                  
                   <div class="Restaurant-info">
                     <p><a href="#">Restaurant Info</a></p>
-                     </div>
+                  </div>
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-                  <div class="portfolio-wrap">
-                    <figure>
-                      <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150"></a>
-                    </figure>
-      
-                    <div class="Event-info">
-                      <p><a href="#">Event Info</a></p>
-                    </div>
+                <div class="portfolio-wrap">
+                  <figure>
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150"></a>
+                  </figure>
+                  
+                  <div class="Event-info">
+                    <p><a href="#">Event Info</a></p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    
+    <footer id="footer">
+      
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
       </div>
-    </section>
-
-  </main>
-
-  <footer id="footer">
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-      </div>
-    </div>
-  </footer><!-- #footer -->
-
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="assets/lib/jquery/jquery.min.js"></script>
-  <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
-  <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/lib/easing/easing.min.js"></script>
-  <script src="assets/lib/superfish/hoverIntent.js"></script>
-  <script src="assets/lib/superfish/superfish.min.js"></script>
-  <script src="assets/lib/wow/wow.min.js"></script>
-  <script src="assets/lib/waypoints/waypoints.min.js"></script>
-  <script src="assets/lib/counterup/counterup.min.js"></script>
-  <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
-  <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
-  <script src="assets/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
-
-  <!-- Javascript File -->
-  <script src="assets/javascript/index.behavior.js"></script>
-  <script src="assets/javascript/ajax.requests.js"></script>
-  <script src="assets/javascript/main.js"></script>
-</body>
-
-</html>
+    </footer><!-- #footer -->
+    
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+    <!-- JavaScript Libraries -->
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/superfish/hoverIntent.js"></script>
+    <script src="assets/lib/superfish/superfish.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="assets/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    
+    <!-- Javascript File -->
+    <script src="assets/javascript/index.behavior.js"></script>
+    <script src="assets/javascript/ajax.requests.js"></script>
+    <script src="assets/javascript/main.js"></script>
+  </body>
+  
+  </html>
+  
