@@ -1,29 +1,40 @@
-var eventBriteAPIKey = "4EWBHY45SSIIT4IW5U63";
+// DOM Elements Query
+var $dateInputElement = $('#date-input');
+var $locationInputElement = $('#location-input');
+var $foodInputElement = $('#food-input');
+var $eventInputElement = $('#event-input');
+var $searchButtonElement = $('#search-button');
+var $searchResultsElement = $('#search');
 
-// Here we are building the URL we need to query the database
-var userInput = 'plays';
-var cityInput = 'Atlanta';
-//var queryURL = "https://www.eventbriteapi.com/v3/events/search/?q=&token=" + eventBriteAPIKey;
-var queryURL = "https://www.eventbriteapi.com/v3/events/search/?q=" + "&location.address=" + cityInput + "&token=" + eventBriteAPIKey;
-//samlpe query "https://www.eventbriteapi.com/v3/events/search/?q=" + userInput + "&location.address=" + cityInput + "&token=" + eventBriteAPIKey;;
+$(document).ready(function() {
+  $searchButtonElement.on('click', function(event) {
+    event.preventDefault();
+    // Store user input in a local variable
+    var dateInput = $dateInputElement.val().trim();
+    var locationInput = $locationInputElement.val().trim();
+    var foodInput = $foodInputElement.val().trim();
+    var eventInput = $eventInputElement.val().trim();
+    // Search for events and food using eventbright and yelp    
+    var foodresult = searchFood(foodInput, locationInput);
+    var eventResult = searchEvent(eventInput, locationInput);
 
-// Here we run our AJAX call to the OpenWeatherMap API
-var test;
+    var resultContainer = $('<div>').addClass('container');
+    var resultHeader = $('<header>').addClass('section-header').append(
+      //Change the text below if you wish to change search results 
+      $('<h3>').addClass('section-title').text('Search Results')
+    );
+    resultContainer.append(resultHeader);
 
-$.ajax({
-    url: queryURL,
-    method: "GET"
-  })
-  // We store all of the retrieved data inside of an object called "response"
-  .then(function (data) {
-      // test = data.events;
-      // for (var i = 0; i < test.length && i < 10; i++) {
-      //   var content = "<h2>" + test[i].name.text;
-      //   $("#results").append(content);  
-
-      // }
-      // test.forEach(function(result) {
-      //   var content = "<h2>" + result.name.text + "</h2>" + result.description.html;
-      //   $("#results").append(content);  
-      // });
+    var resultTabs = $('<div>').addClass('row').append(
+      $('<div>').addClass('col-lg-12').append(
+        $('<ul>').attr('id','search-flters').append(
+          $('<li>').attr('data-filter', 'filter-app').text('Food'),
+          $('<li>').attr('data-filter', 'filter-card').text('Event')
+        )
+      )
+    )
+    $searchResultsElement.append(resultContainer,
+      resultTabs  
+    );
   });
+});
