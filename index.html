@@ -149,7 +149,7 @@
             <div class="w-100"></div>
             <h2 class="title"><a href="#">Food & Entertainment!</a></h2>
             <p>
-              Search for the best places to eat and awesome entertainment.
+            Search below to select your dining and entertainment experience.
             </p>
    
             <!-- Search input for food -->
@@ -163,60 +163,65 @@
               <div class="validation"></div>
               <br>
               <!-- General Food search -->
-              Food Type: <input type="text" class="form-control" name="food" id="food-input" placeholder="Seach for food"/>
+              Food: <input type="text" class="form-control" name="food" id="food-input" placeholder="Search for restaurant (ex. Italian, Chinese) "/>
               <div class="validation"></div>
               <br>
-              Event: <input type="text" class="form-control" name="events" id="event-input" placeholder="Seach for fun"/>
+              Event: <input type="text" class="form-control" name="events" id="event-input" placeholder="Seach for event (ex. concerts, sports, bar)"/>
               <div class="validation"></div>
               <br>
               <div class="text-left" id="search-button"><button class="btn btn-success" type="submit">Search</button></div>
             </form>
             <br>
+          </div>   
+          <div class="col-md-6 wow fadeInUp">
+            <div class="w-100"></div>
+            <img src="assets/images/food.jpg" width="300px" id="image1">
+            <img src="assets/images/food.jpg" width="300px" id="image2">
           </div>
         </div> <!-- </div> End Row -->
       </div> <!-- </div> End Container -->
     </section> <!--- End Search Section-->
     <!--==========================
-      Portfolio Section
+      Plan Section
     ============================-->
-    <section id="Search" class="section-bg">
-
-    </section>
-    <section id = "itineraryArea">
-      <div class = "container" id = "itinerary">
-        <div class="col-md-6 wow fadeInUp">
-          <div class="w-100"></div>
-            <h2 class="title"><a href="#">Your Itinerary</a></h2>
-            <p>
-              Enjoy Your Date!
-            </p>
-            <div class="col-md-6">
-                <div class="portfolio-wrap">
-                  <figure>
-                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150"></a>
-                 </figure>
-    
+    <section id ="itineraryArea">
+        <header class="section-header">
+        <h3>Plan</h3>
+        <p>Enjoy your date. Check out your plan.</p>
+        </header>
+        <!-- two containers -->
+        <div class="container">                 
+          <h2 class="title"><a href="#">Your Itinerary!</a></h2>
+            <div class="row align-items-center">                  
+              <div class="col-md-6 wow fadeInUp">
+                <div class="w-100"></div>
+                  <!-- display food search -->
+                  <div id="display-food">
+                    <figure>
+                        <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150"></a>
+                    </figure>
+                  </div>                  
                   <div class="Restaurant-info">
                     <p><a href="#">Restaurant Info</a></p>
-                     </div>
-                </div>
+                  </div>
               </div>
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-                  <div class="portfolio-wrap">
+
+              <div class="col-md-6 wow fadeInUp">
+                <div class="w-100"></div>
+                <!-- display event search -->
+                  <div id="display-event">
                     <figure>
                       <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150"></a>
                     </figure>
-      
-                    <div class="Event-info">
-                      <p><a href="#">Event Info</a></p>
-                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-      </div>
-    </section>
-
+                  <div class="Event-info">
+                    <p><a href="#">Event Info</a></p>
+                  </div> <!-- end event infop -->
+              </div><!-- end col6 -->
+            </div> <!-- end row  -->
+        </div>  <!--end container  -->
+    </section> <!-- End of section -->
+            
   </main>
 
   <footer id="footer">
