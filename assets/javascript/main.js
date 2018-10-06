@@ -16,12 +16,12 @@ $.ajax({
   })
   // We store all of the retrieved data inside of an object called "response"
   .then(function (data) {
-      test = data.events;
-      for (var i = 0; i < test.length && i < 10; i++) {
-        var content = "<h2>" + test[i].name.text;
-        $("#results").append(content);  
+      // test = data.events;
+      // for (var i = 0; i < test.length && i < 10; i++) {
+      //   var content = "<h2>" + test[i].name.text;
+      //   $("#results").append(content);  
 
-      }
+      // }
       // test.forEach(function(result) {
       //   var content = "<h2>" + result.name.text + "</h2>" + result.description.html;
       //   $("#results").append(content);  
