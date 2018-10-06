@@ -33,9 +33,10 @@ jQuery(document).ready(function( $ ) {
       'class': '',
       'id': ''
     });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
-    $('body').append('<div id="mobile-body-overly"></div>');
+    var $bodyElement = $('body');
+    $bodyElement.append($mobile_nav);
+    $bodyElement.prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
+    $bodyElement.append('<div id="mobile-body-overly"></div>');
     $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
 
     $(document).on('click', '.menu-has-children i', function(e) {
@@ -45,7 +46,7 @@ jQuery(document).ready(function( $ ) {
     });
 
     $(document).on('click', '#mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
+      $bodyElement.toggleClass('mobile-nav-active');
       $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
       $('#mobile-body-overly').toggle();
     });
@@ -53,8 +54,8 @@ jQuery(document).ready(function( $ ) {
     $(document).click(function(e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
+        if ($bodyElement.hasClass('mobile-nav-active')) {
+          $bodyElement.removeClass('mobile-nav-active');
           $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
           $('#mobile-body-overly').fadeOut();
         }
@@ -88,8 +89,8 @@ jQuery(document).ready(function( $ ) {
           $(this).closest('li').addClass('menu-active');
         }
 
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
+        if ($bodyElement.hasClass('mobile-nav-active')) {
+          $bodyElement.removeClass('mobile-nav-active');
           $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
           $('#mobile-body-overly').fadeOut();
         }
