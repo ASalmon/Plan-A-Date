@@ -846,20 +846,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 30px;
 }
 
-/* search Section
+/* search-result Section
 --------------------------------*/
-#search {
+#search-result {
   padding: 60px 0;
 }
 
-#search #search-flters {
+#search-result #search-result-flters {
   padding: 0;
   margin: 5px 0 35px 0;
   list-style: none;
   text-align: center;
 }
 
-#search #search-flters li {
+#search-result #search-result-flters li {
   cursor: pointer;
   margin: 15px 15px 15px 0;
   display: inline-block;
@@ -874,31 +874,31 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease-in-out;
 }
 
-#search #search-flters li:hover, #search #search-flters li.filter-active {
+#search-result #search-result-flters li:hover, #search-result #search-result-flters li.filter-active {
   background: #18d26e;
   color: #fff;
 }
 
-#search #search-flters li:last-child {
+#search-result #search-result-flters li:last-child {
   margin-right: 0;
 }
 
-#search .search-wrap {
+#search-result .search-result-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
-#search .search-wrap:hover {
+#search-result .search-result-wrap:hover {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
 }
 
-#search .search-item {
+#search-result .search-result-item {
   position: relative;
   height: 360px;
   overflow: hidden;
 }
 
-#search .search-item figure {
+#search-result .search-result-item figure {
   background: #000;
   overflow: hidden;
   height: 240px;
@@ -907,12 +907,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-#search .search-item figure:hover img {
+#search-result .search-result-item figure:hover img {
   opacity: 0.4;
   transition: 0.3s;
 }
 
-#search .search-item figure .link-preview, #search .search-item figure .link-details {
+#search-result .search-result-item figure .link-preview, #search-result .search-result-item figure .link-details {
   position: absolute;
   display: inline-block;
   opacity: 0;
@@ -925,41 +925,41 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.2s linear;
 }
 
-#search .search-item figure .link-preview i, #search .search-item figure .link-details i {
+#search-result .search-result-item figure .link-preview i, #search-result .search-result-item figure .link-details i {
   padding-top: 6px;
   font-size: 22px;
   color: #333;
 }
 
-#search .search-item figure .link-preview:hover, #search .search-item figure .link-details:hover {
+#search-result .search-result-item figure .link-preview:hover, #search-result .search-result-item figure .link-details:hover {
   background: #18d26e;
 }
 
-#search .search-item figure .link-preview:hover i, #search .search-item figure .link-details:hover i {
+#search-result .search-result-item figure .link-preview:hover i, #search-result .search-result-item figure .link-details:hover i {
   color: #fff;
 }
 
-#search .search-item figure .link-preview {
+#search-result .search-result-item figure .link-preview {
   left: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#search .search-item figure .link-details {
+#search-result .search-result-item figure .link-details {
   right: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#search .search-item figure:hover .link-preview {
+#search-result .search-result-item figure:hover .link-preview {
   opacity: 1;
   left: calc(50% - 44px);
 }
 
-#search .search-item figure:hover .link-details {
+#search-result .search-result-item figure:hover .link-details {
   opacity: 1;
   right: calc(50% - 44px);
 }
 
-#search .search-item .search-info {
+#search-result .search-result-item .search-result-info {
   background: #fff;
   text-align: center;
   padding: 30px;
@@ -967,7 +967,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0 0 3px 3px;
 }
 
-#search .search-item .search-info h4 {
+#search-result .search-result-item .search-result-info h4 {
   font-size: 18px;
   line-height: 1px;
   font-weight: 700;
@@ -975,15 +975,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 0;
 }
 
-#search .search-item .search-info h4 a {
+#search-result .search-result-item .search-result-info h4 a {
   color: #333;
 }
 
-#search .search-item .search-info h4 a:hover {
+#search-result .search-result-item .search-result-info h4 a:hover {
   color: #18d26e;
 }
 
-#search .search-item .search-info p {
+#search-result .search-result-item .search-result-info p {
   padding: 0;
   margin: 0;
   color: #b8b8b8;
