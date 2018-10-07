@@ -129,15 +129,15 @@ jQuery(document).ready(function( $ ) {
   });
 
     // Results isotope and filter
-    var portfolioIsotope = $('.search-result-container').isotope({
-      itemSelector: '.search-result-item',
-      layoutMode: 'fitRows'
-    });
+    // var searchIsotope = $('.search-result-container').isotope({
+    //   itemSelector: '.search-result-item',
+    //   layoutMode: 'fitRows'
+    // });
   
-    $('#search-result-flters li').on( 'click', function() {
-      $("#search-result-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
+    // $('#search-result-flters li').on( 'click', function() {
+    //   $("#search-result-flters li").removeClass('filter-active');
+    //   $(this).addClass('filter-active');
   
-      portfolioIsotope.isotope({ filter: $(this).data('filter') });
-    });
+    //   searchIsotope.isotope({ filter: $(this).data('filter') });
+    // });
 });
