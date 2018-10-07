@@ -29,6 +29,7 @@ $searchButtonElement.on('click', function (event) {
     }
   }).then(function (response) {
     console.log(response);
+    var queryResult = response.businesses;
     var resultContainer = $('<div>').addClass('container');
     var resultHeader = $('<header>').addClass('section-header').append(
       //Change the text below if you wish to change search results 
@@ -43,28 +44,23 @@ $searchButtonElement.on('click', function (event) {
         )
       )
     );
-
     var newRow = $('<div>').addClass('row search-result-container');
-
-    var newCol = $('<div>').addClass('col-lg-4 col-md-6 search-result-item filter-food wow fadeInUp');
-
-    var individualresultwrapper = $('<div>').addClass('search-result-wrap');
-
-    var newfigure = $('<figure>');
-
-    var newimg = $('<img>').attr('src', response.businesses[0].image_url).addClass('img-fluid');
-    
-    var resultinfo = $('<div>').addClass('search-result-info').append(
-      $('<h6>').text(response.businesses[0].name)
-    );
-    newfigure.append(newimg);
-
-    individualresultwrapper.append(newfigure, resultinfo);
-    newCol.append(individualresultwrapper);
-    newRow.append(newCol);
-
-    resultContainer.append(resultHeader, resultTabs, newCol);
-    $('#search-result').append(resultContainer);
+    for (var i = 0; i < queryResult.length && i < 9; i++) {
+      var newCol = $('<div>').addClass('col-lg-4 col-md-6 search-result-item filter-food wow fadeInUp');
+      var individualresultwrapper = $('<div>').addClass('search-result-wrap');
+      var newfigure = $('<figure>');
+      var newImg = $('<img>').attr('src', queryResult[i].image_url).addClass('img-fluid');
+      var resultinfo = $('<div>').addClass('search-result-info').append(
+        $('<h6>').text(queryResult[i].name),
+        $('<p>').text(queryResult[i].location.address1)
+      );
+      newfigure.append(newImg);
+      individualresultwrapper.append(newfigure, resultinfo);
+      newCol.append(individualresultwrapper);
+      newRow.append(newCol);
+    }
+    resultContainer.append(resultHeader, resultTabs, newRow);
+    $searchResultsElement.append(resultContainer);
 
   });
 
