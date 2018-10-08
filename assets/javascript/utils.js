@@ -10,7 +10,7 @@ var search = function (food, events, location) {
       // Eventbright AJAX request
       $.get( { url: seatgeekQueryURL } )
    ).then(function (yelpResponses, seetgeekResponses) {
-      // Yelp and Eventbright Responses
+      // Yelp and Eventfull Responses
       var yelpQueryResult = yelpResponses[0].businesses;
       var seatgeekQueryResult = seetgeekResponses[0].events;
       $searchResultsElement.empty();
