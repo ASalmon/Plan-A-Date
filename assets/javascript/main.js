@@ -3,7 +3,7 @@ var $locationInputElement = $('#location-input');
 var $foodInputElement = $('#food-input');
 var $eventInputElement = $('#event-input');
 var $searchButtonElement = $('#search-button');
-var $searchResultsElement = $('#search-result');
+var $searchResultsElement = $('#result');
 
 
 //$(document).ready(function () {

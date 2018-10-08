@@ -127,17 +127,4 @@ jQuery(document).ready(function( $ ) {
     },
     allowPageScroll:"vertical"
   });
-
-    // Results isotope and filter
-    // var searchIsotope = $('.search-result-container').isotope({
-    //   itemSelector: '.search-result-item',
-    //   layoutMode: 'fitRows'
-    // });
-  
-    // $('#search-result-flters li').on( 'click', function() {
-    //   $("#search-result-flters li").removeClass('filter-active');
-    //   $(this).addClass('filter-active');
-  
-    //   searchIsotope.isotope({ filter: $(this).data('filter') });
-    // });
 });

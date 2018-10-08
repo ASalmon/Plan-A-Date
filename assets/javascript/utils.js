@@ -13,8 +13,10 @@ var search = function (food, events, location) {
       // Yelp and Eventfull Responses
       var yelpQueryResult = yelpResponses[0].businesses;
       var seatgeekQueryResult = seetgeekResponses[0].events;
+
       $searchResultsElement.empty();
       // Created section to display results along with section header
+      var searchResultContainer = $('<section>').attr('id', 'search-result')
       var resultContainer = $('<div>').addClass('container');
       var resultHeader = $('<header>').addClass('section-header').append(
           //Change the text below if you wish to change search results 
@@ -48,7 +50,8 @@ var search = function (food, events, location) {
           searchResultRow.append(newCol);
       }
       resultContainer.append(searchResultRow);
-      $searchResultsElement.append(resultContainer);
+      searchResultContainer.append(resultContainer)
+      $searchResultsElement.append(searchResultContainer);
       // Display response from Seatgeek
       for (var i = 0; i < seatgeekQueryResult.length && i < 9; i++) {
          var newCol = $('<div>').addClass('col-lg-4 col-md-6 search-result-item filter-events wow fadeInUp');
@@ -65,13 +68,15 @@ var search = function (food, events, location) {
          searchResultRow.append(newCol);
      }
       resultContainer.append(searchResultRow);
-      $searchResultsElement.append(resultContainer);
+      searchResultContainer.append(resultContainer)
+      $searchResultsElement.append(searchResultContainer);
+      // Scroll to new search after results are loaded
+      $('html, body').animate({ scrollTop: $('#search-result').offset().top-30 }, 'slow');
       // Results isotope and filter
       var searchIsotope = $('.search-result-container').isotope({
           itemSelector: '.search-result-item',
           layoutMode: 'fitRows'
       });
-
       $('#search-result-flters li').on('click', function () {
           $("#search-result-flters li").removeClass('filter-active');
           $(this).addClass('filter-active');
