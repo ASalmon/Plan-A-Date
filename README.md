@@ -9,11 +9,9 @@ By providing a centralized location, it prevents searching multiple sites to fin
 
 **How to use**
 * Launch the index.html file. 
-* Select Searh menu option.
-* Enter a City, Food and or Event then click Search.
-* View Search Results (view options: All, Food or Event).
-* Click image to select Food/Event.
-* Final Plan will be presented.
+* Select the Search menu option.
+* Enter a City, Food and/or Event, then click Search.
+* View Search Results (View options include: All, Food or Event).
 
 **Future Enhancements**
 * Add reservations (Open Table) 
@@ -23,30 +21,30 @@ By providing a centralized location, it prevents searching multiple sites to fin
 * Add hotel options
 * Save plan for sharing with others (email)
 * Add plan to user's calendar
+* Add voice recognition for improved accessability
 
 **Technologies Used**
-Languages
+
 * JavaScript
 * HTML
 * CSS
 
 APIs
 * Yelp - Food
-* Seat Geek - Event
+* SeatGeek - Event
 
 JavaScript Libraries
 * jQuery
 
-Front-end Framework 
-* Bootstrap
-
-Additional JavaScript Libraries
+Additional Libraries
 * Superfish
-* Owl Carousel
+* Animate
 * Lightbox
 * Easing
 * WOW
-* Waypoints
-* CounterUp
 * Isotope
 * Touchswipe
+* Font-awesome
+
+Front-end Framework 
+* Bootstrap
