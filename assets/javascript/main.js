@@ -14,8 +14,8 @@ $searchButtonElement.on('click', function (event) {
   var foodInput = $foodInputElement.val().trim();
   var eventInput = $eventInputElement.val().trim();
   // Search for events and food using eventbright and yelp    
-  if (foodInput === '' &&
-      locationInput === '' &&
+  if (foodInput === '' ||
+      locationInput === '' ||
       eventInput === '') {
         var data = {message: 'A valid input is needed in each field'};
         snackbarContainer.MaterialSnackbar.showSnackbar(data);
