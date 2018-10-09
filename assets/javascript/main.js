@@ -4,8 +4,8 @@ var $foodInputElement = $('#food-input');
 var $eventInputElement = $('#event-input');
 var $searchButtonElement = $('#search-button');
 var $searchResultsElement = $('#result');
-
-
+//var $snackbarElement = $('#input-validation');
+var snackbarContainer = document.querySelector('#input-validation');
 //$(document).ready(function () {
 $searchButtonElement.on('click', function (event) {
   event.preventDefault();
@@ -14,5 +14,12 @@ $searchButtonElement.on('click', function (event) {
   var foodInput = $foodInputElement.val().trim();
   var eventInput = $eventInputElement.val().trim();
   // Search for events and food using eventbright and yelp    
-  search(foodInput, eventInput, locationInput);
+  if (foodInput === '' &&
+      locationInput === '' &&
+      eventInput === '') {
+        var data = {message: 'A valid input is needed in each field'};
+        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  } else {
+    search(foodInput, eventInput, locationInput);
+  }
 });

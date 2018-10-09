@@ -7,10 +7,10 @@ var search = function (food, events, location) {
    $.when(
       // Yelp AJAX request
       $.get( {url: yelpQueryURL, headers: {'authorization': yelpAPIKey}}),
-      // Eventbright AJAX request
+      // Seatgeek AJAX request
       $.get( { url: seatgeekQueryURL } )
    ).then(function (yelpResponses, seetgeekResponses) {
-      // Yelp and Eventfull Responses
+      // Yelp and Seatgeek Responses
       var yelpQueryResult = yelpResponses[0].businesses;
       var seatgeekQueryResult = seetgeekResponses[0].events;
 
