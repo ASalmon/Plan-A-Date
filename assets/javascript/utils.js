@@ -1,6 +1,6 @@
 var search = function (food, events, location) {
    var seatgeekAPIKey = "MTM0NzI3NDZ8MTUzODkzNjQ4Ni43OA";
-   var seatgeekQueryURL = 'https://api.seatgeek.com/2/events?q='+ location + "&client_id=" + seatgeekAPIKey;
+   var seatgeekQueryURL = 'https://api.seatgeek.com/2/events?q=' + events + "&venue.city=" + location + "&client_id=" + seatgeekAPIKey;
    var yelpQueryURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?text=&term=" + food + "&location=" + location;
    var yelpAPIKey = 'Bearer E7MDSicyKUxKA-QyaBY69yUUE96x1vw9m4aL0o7hHyHieVHcjNA8gkLWE8Th2qLFDskdLjG7F4szURHf_AoH9SxoeVhUTCZWgg-10xXtLcYAnFv5CvGTU-n4rSO0W3Yx'
 
