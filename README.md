@@ -45,6 +45,8 @@ Additional Libraries
 * Isotope
 * Touchswipe
 * Font-awesome
+* ionicons
 
-Front-end Framework 
+Framework 
 * Bootstrap
+* Material Design Lite

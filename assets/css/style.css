@@ -590,6 +590,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   margin-bottom: 0;
 }
+/* VH style for api credits bottom of search page */
+#api-credits {
+  text-align: center;
+}
+
+#food-credit, #event-credit {
+  font-size: 10px;
+}
+
+#food-logo, #event-logo,
+#food-credit, #event-credit {
+display: inline-block;
+}
+
+#event-logo {
+  margin-left: 10px;
+}
 
 /* search-result Section
 --------------------------------*/
