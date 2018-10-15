@@ -3,6 +3,8 @@
 ### Group Project 1
 #### Team members: Vicki Hope, Jamie Rodriguez Alton Salmon, Daniel Valverde
 
+https://asalmon.github.io/Plan-A-Date
+
 **Description**
 Plan A Date is an application that reduces the complexity of planning an outing. 
 By providing a centralized location, it prevents searching multiple sites to find food, entertainment and attractions.
